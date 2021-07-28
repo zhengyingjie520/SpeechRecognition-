@@ -10,5 +10,5 @@ COPY apache2/start.sh /usr/local/apache2/start.sh
 COPY html /var/www/html
 RUN chmod 777 /usr/local/apache2/start.sh
 EXPOSE 80
-
+CMD ["/bin/sh", "/usr/local/apache2/start.sh"]
 
